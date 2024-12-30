@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looker Studio Full Embed</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9; /* Optional: Change background color */
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 1920px; /* Optional: Set max width */
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0; /* Required to maintain aspect ratio */
+      overflow: hidden; /* Prevent overflow issues */
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe 
+      src="https://lookerstudio.google.com/embed/reporting/03692f16-bf0d-4765-a9f6-16551d7c7a52/page/VkuaE" 
+      allowfullscreen 
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+  </div>
+</body>
+</html>
+``
